@@ -1,0 +1,10 @@
+# Apply SMOTE to train set to balance
+
+sample_strat = {
+    cls: cnt*2 if cnt < 200 else cnt
+    for cls, cnt in Counter(y_train).items()
+}
+print(sample_strat)
+
+smote = SMOTE(k_neighbors=3, sampling_strategy=sample_strat) # k_neigbors < smallest class size (4)
+x_train_bal, y_train_bal = smote.fit_resample(x_train_scaled, y_train)
