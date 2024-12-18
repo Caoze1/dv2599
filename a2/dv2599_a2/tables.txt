@@ -1,0 +1,153 @@
+\newcommand{\dftime}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{Fit time for ten-fold stratified cross-validation (seconds)}
+\label{df_time}
+\begin{tabular}{ccccc}
+\hline
+\textit{Fold} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.5575 & 0.0277 & 0.1898 \\
+2 & 0.5722 & 0.0170 & 0.1445 \\
+3 & 0.5341 & 0.0170 & 0.1425 \\
+4 & 0.5481 & 0.0150 & 0.1583 \\
+5 & 0.5343 & 0.0156 & 0.1586 \\
+6 & 0.5366 & 0.0173 & 0.1510 \\
+7 & 0.5405 & 0.0150 & 0.1504 \\
+8 & 0.5422 & 0.0140 & 0.1601 \\
+9 & 0.5321 & 0.0143 & 0.1505 \\
+10 & 0.5391 & 0.0140 & 0.1415 \\
+\hline
+avg & 0.5437 & 0.0167 & 0.1547 \\
+stdev & 0.0126 & 0.0041 & 0.0140 \\
+\hline
+\end{tabular}
+\end{table}
+}
+\newcommand{\dfacc}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{Accuracy score for ten-fold stratified cross-validation}
+\label{df_acc}
+\begin{tabular}{ccccc}
+\hline
+\textit{Fold} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.9501 & 0.9306 & 0.9241 \\
+2 & 0.9478 & 0.9217 & 0.9413 \\
+3 & 0.9348 & 0.9196 & 0.9348 \\
+4 & 0.9478 & 0.9391 & 0.9370 \\
+5 & 0.9543 & 0.9239 & 0.9478 \\
+6 & 0.9565 & 0.9304 & 0.9522 \\
+7 & 0.9696 & 0.9522 & 0.9565 \\
+8 & 0.9761 & 0.9261 & 0.9413 \\
+9 & 0.8913 & 0.8543 & 0.8913 \\
+10 & 0.8630 & 0.8717 & 0.8696 \\
+\hline
+avg & 0.9391 & 0.9170 & 0.9296 \\
+stdev & 0.0353 & 0.0302 & 0.0279 \\
+\hline
+\end{tabular}
+\end{table}
+}
+\newcommand{\dff}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{F1 score for ten-fold stratified cross-validation}
+\label{df_f}
+\begin{tabular}{ccccc}
+\hline
+\textit{Fold} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.9352 & 0.9080 & 0.9025 \\
+2 & 0.9359 & 0.8977 & 0.9252 \\
+3 & 0.9138 & 0.8964 & 0.9157 \\
+4 & 0.9352 & 0.9222 & 0.9178 \\
+5 & 0.9441 & 0.9025 & 0.9326 \\
+6 & 0.9479 & 0.9144 & 0.9399 \\
+7 & 0.9607 & 0.9368 & 0.9419 \\
+8 & 0.9636 & 0.9045 & 0.9235 \\
+9 & 0.8616 & 0.8204 & 0.8611 \\
+10 & 0.8212 & 0.8300 & 0.8214 \\
+\hline
+avg & 0.9219 & 0.8933 & 0.9082 \\
+stdev & 0.0457 & 0.0379 & 0.0383 \\
+\hline
+\end{tabular}
+\end{table}
+}
+\newcommand{\friedmanfittime}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{Friedman ranks for fit time}
+\label{friedman_fit_time}
+\begin{tabular}{ccccc}
+\hline
+\textit{Data set} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.5575 (3) & 0.0277 (1) & 0.1898 (2) \\
+2 & 0.5722 (3) & 0.017 (1) & 0.1445 (2) \\
+3 & 0.5341 (3) & 0.017 (1) & 0.1425 (2) \\
+4 & 0.5481 (3) & 0.015 (1) & 0.1583 (2) \\
+5 & 0.5343 (3) & 0.0156 (1) & 0.1586 (2) \\
+6 & 0.5366 (3) & 0.0173 (1) & 0.151 (2) \\
+7 & 0.5405 (3) & 0.015 (1) & 0.1504 (2) \\
+8 & 0.5422 (3) & 0.014 (1) & 0.1601 (2) \\
+9 & 0.5321 (3) & 0.0143 (1) & 0.1505 (2) \\
+10 & 0.5391 (3) & 0.014 (1) & 0.1415 (2) \\
+\hline
+avg rank & 3.0 & 1.0 & 2.0 \\
+\hline
+\end{tabular}
+\end{table}
+}
+\newcommand{\friedmanaccuracyscore}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{Friedman ranks for accuracy score}
+\label{friedman_accuracy_score}
+\begin{tabular}{ccccc}
+\hline
+\textit{Data set} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.9501 (1) & 0.9306 (2) & 0.9241 (3) \\
+2 & 0.9478 (1) & 0.9217 (3) & 0.9413 (2) \\
+3 & 0.9348 (2) & 0.9196 (3) & 0.9348 (2) \\
+4 & 0.9478 (1) & 0.9391 (2) & 0.937 (3) \\
+5 & 0.9543 (1) & 0.9239 (3) & 0.9478 (2) \\
+6 & 0.9565 (1) & 0.9304 (3) & 0.9522 (2) \\
+7 & 0.9696 (1) & 0.9522 (3) & 0.9565 (2) \\
+8 & 0.9761 (1) & 0.9261 (3) & 0.9413 (2) \\
+9 & 0.8913 (2) & 0.8543 (3) & 0.8913 (2) \\
+10 & 0.863 (3) & 0.8717 (1) & 0.8696 (2) \\
+\hline
+avg rank & 1.4 & 2.6 & 2.2 \\
+\hline
+\end{tabular}
+\end{table}
+}
+\newcommand{\friedmanfscore}{
+\begin{table}[ht]
+\centering\scriptsize
+\caption{Friedman ranks for f1 score}
+\label{friedman_f_score}
+\begin{tabular}{ccccc}
+\hline
+\textit{Data set} & \textit{Random Forest} & \textit{Logistic Regression} & \textit{SVC} \\
+\hline
+1 & 0.9352 (1) & 0.908 (2) & 0.9025 (3) \\
+2 & 0.9359 (1) & 0.8977 (3) & 0.9252 (2) \\
+3 & 0.9138 (2) & 0.8964 (3) & 0.9157 (1) \\
+4 & 0.9352 (1) & 0.9222 (2) & 0.9178 (3) \\
+5 & 0.9441 (1) & 0.9025 (3) & 0.9326 (2) \\
+6 & 0.9479 (1) & 0.9144 (3) & 0.9399 (2) \\
+7 & 0.9607 (1) & 0.9368 (3) & 0.9419 (2) \\
+8 & 0.9636 (1) & 0.9045 (3) & 0.9235 (2) \\
+9 & 0.8616 (1) & 0.8204 (3) & 0.8611 (2) \\
+10 & 0.8212 (3) & 0.83 (1) & 0.8214 (2) \\
+\hline
+avg rank & 1.3 & 2.6 & 2.1 \\
+\hline
+\end{tabular}
+\end{table}
+}
